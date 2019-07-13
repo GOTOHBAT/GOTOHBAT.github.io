@@ -101,7 +101,14 @@
 <p>##实现</p>
 <ul>
 <li>springboot+bootstrap+mysql</li>
+<li>—————引用————–</li>
 </ul>
+<hr>
+<pre><code>- @Component</code></pre><hr>
+<hr>
+<h2 id="—————-快捷键————"><a href="#—————-快捷键————" class="headerlink" title="—————-快捷键————-"></a>—————-快捷键————-</h2><pre><code>- alt + insert 快写get，set
+-shift + enter 光标在行中间时实现快速换行</code></pre><hr>
+<hr>
 <p>1.bootstarp的<a href="https://v3.bootcss.com/getting-started/" target="_blank" rel="noopener">下载</a>      </p>
 <ul>
 <li>按照自己的需要对组件进行引入修改</li>
@@ -110,7 +117,7 @@
 <p>3.gethub登录调用authorize   </p>
 <ul>
 <li>为登录添加链接   <a href="https://github.com/login/oauth/authorize" target="_blank" rel="noopener">https://github.com/login/oauth/authorize</a></li>
-<li>添加client_id      申请的OAuth app 中  40d53abb717026d1140f   </li>
+<li>添加client_id      申请的OAuth app 中    </li>
 <li>添加redirect_uri   OAuth 中Authorization callback URL：<a href="http://localhost:8888/callback" target="_blank" rel="noopener">http://localhost:8888/callback</a></li>
 <li>scope=URL：<a href="http://localhost:8888/callback" target="_blank" rel="noopener">http://localhost:8888/callback</a></li>
 <li>scope=user  详细原因看<a href="https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/" target="_blank" rel="noopener">文档</a></li>
@@ -118,7 +125,12 @@
 </ul>
 <p>4.获取code   </p>
 <ul>
-<li></li>
+<li>新建OAuthcontroller用于获取code</li>
+</ul>
+<p>5.获取用户信息   </p>
+<ul>
+<li>在controller同级新建文件夹provider(提供第三方调用的能力) dto(数据传输对象模型)</li>
+<li>githubprovider 中写获取用户信息的方法</li>
 </ul>
 
       
